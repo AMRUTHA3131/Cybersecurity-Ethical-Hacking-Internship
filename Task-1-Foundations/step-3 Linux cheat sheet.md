@@ -14,3 +14,7 @@
 | `chown` | Change ownership | `chown user file.txt` |
 | `apt` | Package management | `apt update` |
 | `dpkg` | Manage Debian packages | `dpkg -l` |
+| `ipconfig` | See IP information | `ipconfig` |
+| `ping` | Check connectivity | `ping <ip address> ` |
+| `netstat` | View network connections | `netstat tuln` |
+| `traceroute` | See the path | ` traceroute example.com` |
