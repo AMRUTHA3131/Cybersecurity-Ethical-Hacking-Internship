@@ -89,7 +89,7 @@ You type: www.google.com -> DNS finds: 142.250.10.5
 - Browser connects to the server: Now the browser can communicate with the web server.
 - 
 # HTTP - Hypertext Transfer Protocol
-HTTP is an application layer protocol used for communication between a client and a web server.
+HTTP is an application layer protocol used for communication between a client and a web server. Port number is 80. HTTP data is not encrypted in transit.
 ##### HTTP Request:- An HTTP REQUEST is a message sent from the client to the server asking for resources.
 ##### HTTP Response:- An HTTP Response is the server's reply to the client
 ##### HTTP Methods:- 
@@ -100,7 +100,7 @@ When a browser sends an HTTP request, it tells the server what action it wants t
 | `POST` | Send new data | 
 | `PUT` | update existing data |
 | `DELETE` | Delete data |
-##### HTTP Status codes
+##### HTTP Status codes:-
 When a server responds to an HTTP request, it also sends a status code. the status code tells the client whether the request was successful or if there was a problem
 | Status code | Meaning | 
 |---|---|
@@ -111,6 +111,11 @@ When a server responds to an HTTP request, it also sends a status code. the stat
 | `403` | Forbidden |
 | `404` | Not found |
 | `500` | Internal server error |
+# HTTPS - Hypertext Transfer Protocol Secure
+- HTTPs is an application layer protocol used for communication between a client and a web server. Port number is 443. HTTPs data is encrypted in transit.
+- The browser verifies the server's digital certificate.
+- After the TLS handshake establishes the cryptographic session, HTTP data is transmitted through the encrypted TLS connection.
+
 
 
 
