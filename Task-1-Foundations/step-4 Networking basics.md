@@ -1,1 +1,2 @@
-## OSI Model Layers & Functions
+## OSI Model Layers & Functions:-
+OSI stands for open systems interconnection
