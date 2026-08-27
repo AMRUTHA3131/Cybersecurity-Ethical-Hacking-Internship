@@ -92,7 +92,26 @@ You type: www.google.com -> DNS finds: 142.250.10.5
 HTTP is an application layer protocol used for communication between a client and a web server.
 ##### HTTP Request:- An HTTP REQUEST is a message sent from the client to the server asking for resources.
 ##### HTTP Response:- An HTTP Response is the server's reply to the client
+##### HTTP Methods:- 
+When a browser sends an HTTP request, it tells the server what action it wants to perform. This action is called an HTTP Method
+| Method | Purpose | 
+|---|---|
+| `GET` | Retrieve data |
+| `POST` | Send new data | 
+| `PUT` | update existing data |
+| `DELETE` | Delete data |
 ##### HTTP Status codes
+When a server responds to an HTTP request, it also sends a status code. the status code tells the client whether the request was successful or if there was a problem
+| Status code | Meaning | 
+|---|---|
+| `100` | Continue |
+| `200 ok` | request was successful | 
+| `301` | Moved permanently |
+| `302` | Temporary redirect |
+| `403` | Forbidden |
+| `404` | Not found |
+| `500` | Internal server error |
+
 
 
 
