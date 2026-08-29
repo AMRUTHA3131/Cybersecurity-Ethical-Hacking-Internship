@@ -164,7 +164,7 @@ Laptop(192.168.1.10) -> Router -> Public IP -> Internet
 2. Dynamic NAT
    Private addresses are mapped to addresses from a pool of public addresses.
 3.PAT — Port Address Translation
-Many private devices share one public IP, with different source ports allowing the router to distinguish connections.   
+   Many private devices share one public IP, with different source ports allowing the router to distinguish connections.   
   
    
 
