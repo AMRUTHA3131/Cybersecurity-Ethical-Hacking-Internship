@@ -115,6 +115,58 @@ When a server responds to an HTTP request, it also sends a status code. the stat
 - HTTPs is an application layer protocol used for communication between a client and a web server. Port number is 443. HTTPs data is encrypted in transit.
 - The browser verifies the server's digital certificate.
 - After the TLS handshake establishes the cryptographic session, HTTP data is transmitted through the encrypted TLS connection.
+# IP Address
+Ip address is a logical address and unique number having for each device. It helps identify the devices and communicate with each other.
+   #### IPV4 address
+- IPV4 (Internet protocol version 4) is the fourth version of IP. It uses 32bits of address to identify the device.
+- It is divided into 4 octets, each containing 8 bits.
+   ###### Example 
+192.168.1.10
+   #### Private Ip Address
+private address are used within the local networks like College, Office, Home, etc..,
+Ranges are
+- 10.0.0.0  -  10.255.255.255
+- 172.16.0.0  -  172.31.255.255
+- 192.168.0.0  -  192.168.255.255
+
+Common Examples of IP address:-
+Laptop  → 192.168.1.10
+Phone   → 192.168.1.11
+TV      → 192.168.1.12
+  #### Public IP Address
+A public IP is used for communication across the Internet.
+  ###### Phone (192.168.1.3) -> Lap (192.168.1.2) -> Router -> Public IP(49.205.100.25) -> Internet
+# Subnetting
+Subnet is the practice of diving thee large network into two or more networks is called subnetting.
+###### example:
+192.168.1.0/24
+#### Subnet Mask
+- A subnet mask tells us which portion of an IPv4 address represents the network and which portion represents the host.
+- In above example 24 Networks bits and 8 Host bits
+- /24 has:32 - 24 = 8 host bits
+  ###### Therefore:
+2⁸ = 256 addresses
+- But two addresses are traditionally reserved:
+- Network address
+- Broadcast address
+- So usable host addresses:256 - 2 = 254
+###### Therefore:
+- Network:   192.168.1.0
+- Usable:    192.168.1.1 – 192.168.1.254
+- Broadcast: 192.168.1.255
+# NAT — Network Address Translation
+- NAT allows private IP addresses to communicate with the Internet by translating addresses at a router/firewall.
+- The private address(192.168.1.10) is translated to a public address when traffic goes out to the Internet.
+Laptop(192.168.1.10) -> Router -> Public IP -> Internet
+#### Types of NAT
+1. Static NAT
+   Useful when an internal server needs a consistent public address.
+2. Dynamic NAT
+   Private addresses are mapped to addresses from a pool of public addresses.
+3.PAT — Port Address Translation
+Many private devices share one public IP, with different source ports allowing the router to distinguish connections.   
+  
+   
 
 
 
